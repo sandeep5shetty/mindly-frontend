@@ -1,9 +1,10 @@
-import "./App.css";
+import './App.css';
+import { AuthPage } from './components/AuthPage';
 
 function App() {
   return (
     <>
-      <p>Heyy there just started frontend</p>
+      <AuthPage />
     </>
   );
 }
