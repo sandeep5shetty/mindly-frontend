@@ -1,10 +1,12 @@
 import './App.css';
-import { AuthPage } from './components/AuthPage';
+import { SidebarDemo } from './components/SidebarDemo';
 
 function App() {
   return (
     <>
-      <AuthPage />
+      <div className="flex items-center justify-center">
+        <SidebarDemo />
+      </div>
     </>
   );
 }
