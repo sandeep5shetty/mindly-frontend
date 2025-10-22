@@ -4,7 +4,6 @@ import { Sidebar, SidebarBody, SidebarLink } from './ui/sidebar';
 import {
   IconArrowLeft,
   IconBrandTabler,
-  IconSettings,
   IconUserBolt,
 } from '@tabler/icons-react';
 import { motion } from 'motion/react';
@@ -26,13 +25,13 @@ export function SidebarDemo() {
         <IconUserBolt className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
       ),
     },
-    {
+    /* {
       label: 'Settings',
       href: '#',
       icon: (
         <IconSettings className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
       ),
-    },
+    }, */
     {
       label: 'Logout',
       href: '#',
@@ -46,7 +45,7 @@ export function SidebarDemo() {
     <div
       className={cn(
         'mx-auto flex w-full max-w-7xl flex-1 flex-col overflow-hidden rounded-md border border-neutral-200 bg-gray-100 md:flex-row dark:border-neutral-700 dark:bg-neutral-800',
-        'h-[60vh]', // for your use case, use `h-screen` instead of `h-[60vh]`
+        'h-screen', // Changed from h-[60vh] to h-screen for full height
       )}
     >
       <Sidebar open={open} setOpen={setOpen}>
@@ -62,7 +61,7 @@ export function SidebarDemo() {
           <div>
             <SidebarLink
               link={{
-                label: 'Manu Arora',
+                label: 'Sandeep Shetty',
                 href: '#',
                 icon: (
                   <img
@@ -94,7 +93,7 @@ export const Logo = () => {
         animate={{ opacity: 1 }}
         className="font-medium whitespace-pre text-black dark:text-white"
       >
-        Acet Labs
+        Mindly
       </motion.span>
     </a>
   );
